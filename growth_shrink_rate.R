@@ -191,7 +191,7 @@ print(paste("Mean growth rate is",mean(growth_rates),"pixel/s."))
 print(paste("Median growth rate is",median(growth_rates),"pixel/s."))
 print(paste("Mean shrink rate is",mean(shrink_rates),"pixel/s."))
 print(paste("Median shrink rate is",median(shrink_rates),"pixel/s."))
-print(loc_per_bin)
+
 
 ggplot(data.frame(rate = growth_rates), aes(rate)) +
   geom_histogram(bins = 50) +
