@@ -25,5 +25,5 @@ Scripts and raw data of "Protein-PAINT in living cells using engineered reversib
 - If necessary, conduct drift correction using Picasso Render.
 - Split the combined hdf5 file to get a temporal sequence of super-resolution images using `hdf5split.R`: `Rscript hdf5split.R /path/to/combined/hdf5/file N`, where `N` is the raw data frame number corresponding to a single reconstructed image.
 - Render 16-bit images in TIFF format using `PicassoOfFrames.R`: `Rscript PicassoOfFrames.R /path/to/hdf5/file /target/path/for/reconstructed/tiff/image Scale`, where `Scale` is the magnification factor of the final tiff image relative to the original data.
-- Export localization details for microtubule growth rate and shrink rate calculation using `hdf52csv.R`: `Rscript hdf52cssv.R /path/to/hdf5/file`.
-- Calculate microtubule growth rate and shrink rate using `growth_shrink_rate.R`: `Rscript growth_shrink_rate.R /path/to/csv/file`, The mean growth rate, median growth rate, mean shrink rate and median shrink rate will be printed to the console.
+- Export localization details for microtubule growth rate and shrink rate calculation using `hdf52csv.R`: `Rscript hdf52csv.R /path/to/hdf5/file`.
+- Calculate microtubule growth rate and shrink rate using `growth_shrink_rate.R`: `Rscript growth_shrink_rate.R /path/to/csv/file`, The mean growth rate, median growth rate, mean shrink rate, and median shrink rate will be printed to the console.
